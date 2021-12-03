@@ -4,6 +4,7 @@ ARG BRANCH
 RUN yum install -y git
 RUN git clone --depth=50 --branch=${BRANCH} https://www.github.com/leadwire-apm/leadwire-portail.git /leadwire-portail
 
+
 FROM centos:7
 ARG VERSION_PORTAIL
 ARG BUILD_DATE
